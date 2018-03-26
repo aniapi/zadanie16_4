@@ -7846,7 +7846,6 @@ var App = function (_React$Component) {
             return _react2.default.createElement(
                 'div',
                 { className: _App2.default.TodoApp },
-                'Tutaj pojawi\u0105 si\u0119 komponenty naszej aplikacji.',
                 _react2.default.createElement(_Title2.default, null)
             );
         }
@@ -8659,7 +8658,6 @@ module.exports = function (css) {
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
-exports.Title = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -8702,7 +8700,7 @@ var Title = function (_React$Component) {
 	return Title;
 }(_react2.default.Component);
 
-exports.Title = Title;
+exports.default = Title;
 
 /***/ })
 /******/ ]);
