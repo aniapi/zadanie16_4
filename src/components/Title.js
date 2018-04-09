@@ -5,6 +5,7 @@ class Title extends React.Component {
 	    return (
 	        <div className={Title}>
 	            <h2>To jest tytuł.</h2>
+	            <p>{props.number}</p>
 	        </div>    
 	    );
 	}

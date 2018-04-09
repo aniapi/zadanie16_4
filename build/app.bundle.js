@@ -7817,7 +7817,11 @@ var App = function (_React$Component) {
         var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
 
         _this.state = {
-            data: []
+            data: [{
+                id: 1,
+                text: 'zadanie 1' }, { id: 2,
+                text: 'zadanie 2'
+            }]
         };
         return _this;
     }
@@ -7846,7 +7850,7 @@ var App = function (_React$Component) {
             return _react2.default.createElement(
                 'div',
                 { className: _App2.default.TodoApp },
-                _react2.default.createElement(_Title2.default, null)
+                _react2.default.createElement(_Title2.default, { number: this.state.data.length })
             );
         }
     }]);
@@ -8692,6 +8696,11 @@ var Title = function (_React$Component) {
 					'h2',
 					null,
 					'To jest tytu\u0142.'
+				),
+				_react2.default.createElement(
+					'p',
+					null,
+					props.number
 				)
 			);
 		}
