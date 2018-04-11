@@ -9,11 +9,13 @@ class App extends React.Component {
         super(props);
         this.state = {
             data: [{
-                    id: 1,
-                    text: 'zadanie 1'}, 
-                    {id: 2,
-                    text: 'zadanie 2',
-            }]
+                id: 1,
+                    text: 'zadanie 1'
+                }, {
+                id: 2,
+                    text: 'zadanie 2'
+                }
+            ]
         };
     }
 
@@ -29,15 +31,15 @@ class App extends React.Component {
         removeTodo(id) {
             const remainder = this.state.data.filter(todo => todo.id !== id);
             this.setState({data: remainder});
-    	}
+        }
 
-	render() {
-	    return (
-	        <div className={style.TodoApp}>
-	            <Title number={this.state.data.length} />
-	        </div>
-	    );
-	}
+    render() {
+        return (
+            <div className={style.TodoApp}>
+                <Title title="Lista zadań" number={this.state.data.length} />
+            </div>
+        );
+    }
 }
 
 export default App;
